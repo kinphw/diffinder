@@ -1,0 +1,8 @@
+# Build output (compiled add-in — regenerate with build.ps1)
+build/
+*.xlam
+*.xlsb
+
+# Excel temp / lock files
+~$*
+*.tmp

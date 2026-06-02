@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+  <ribbon>
+    <tabs>
+      <tab id="tabDiff" label="Diffinder">
+        <group id="grpDiff" label="셀 비교">
+          <button id="btnPopup" label="직접 입력"
+                  size="large" imageMso="FindDialog"
+                  onAction="Ribbon_PopupPicker"
+                  screentip="직접 입력 비교"
+                  supertip="팝업 창이 순서대로 떠서 [이전] 셀 → [이후] 셀 → [결과] 셀을 직접 클릭하거나 셀 주소를 입력하면, 두 텍스트의 차이를 결과 셀에 표시합니다."/>
+          <button id="btnRange" label="셀 선택 비교"
+                  size="large" imageMso="TableColumnSelect"
+                  onAction="Ribbon_SelectedCells"
+                  screentip="셀 선택 비교"
+                  supertip="시트에서 [이전][이후] 2개 열 또는 [이전][이후][결과] 3개 열을 한 번에 선택한 뒤 누르면, 선택한 각 행을 비교해 결과를 표시합니다."/>
+        </group>
+        <group id="grpInfo" label="정보">
+          <button id="btnAbout" label="정보"
+                  size="large" imageMso="Help"
+                  onAction="Ribbon_ShowAbout"
+                  screentip="Diffinder 정보"
+                  supertip="Diffinder 버전 정보를 표시합니다."/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
