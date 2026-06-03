@@ -1,7 +1,9 @@
-# Build output (compiled add-in — regenerate with build.ps1)
+# Build output (compiled add-in / distributable — regenerate with build.ps1)
 build/
+dist/
 *.xlam
 *.xlsb
+*.zip
 
 # Excel temp / lock files
 ~$*
